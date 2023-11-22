@@ -26,8 +26,8 @@ class TrainsTableSeeder extends Seeder
             $train->arrival_time = $faker->time;
             $train->train_code = $faker->swiftBicNumber();
             $train->number_carriages = $faker->numberBetween(1, 4);
-            $train->number_carriages = $faker->boolean();
-            $train->number_carriages = $faker->boolean();
+            $train->in_time = $faker->boolean();
+            $train->deleted = $faker->boolean();
             $train->arrive_date = $faker->date();
 
             $train->save();
